@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+  color:  rgba(0, 68, 128, 0.766);
+ border-radius: 50px;
+ font-weight: 600;
+}
+.Para br{
+  display: none;
+  
+
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+@keyframes IconMove {
+  0%{
+    margin-left: 0rem;
+  
+  }
+  50%{
+    margin-left: .5rem;
+  
+  }
+  100%{
+    margin-left: 1rem;
+  
+  }
+}
+.LoginIcon{
+  animation-name: IconMove;
+  animation-duration: .8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+.Login:hover>.LoginIcon{
+  margin-left: 2rem;
+  
+}
+
+
+@media (max-width: 767px) {
+  .Slider {
+    /* your styles for mobile */
+    height: 300px;
+    object-fit: cover;
+  }
+  .NavBar{
+    padding:16px 32px ;
+  }
+  .Menu{
+    display: none;
+  }
+  .Login-Sin{
+    display: none;
+  }
+  .Cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding:0 3px ;
+    
+  }
+  .Card{
+    /* width: 220px;
+    height:fit-content;
+    display: flex; */
+    /* flex-wrap: wrap; */
+  }
+  .CardImg{
+    /* height: 150px; */
+  }
+}
+
